@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">VCloset</string>
+    <string name="iniciar">Aperte aqui para iniciar</string>
 </resources>
