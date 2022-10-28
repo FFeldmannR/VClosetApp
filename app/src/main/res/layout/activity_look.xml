@@ -6,4 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".view.LookActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnMenu" />
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
