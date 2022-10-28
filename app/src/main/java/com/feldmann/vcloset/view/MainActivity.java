@@ -2,7 +2,11 @@ package com.feldmann.vcloset.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
 import com.feldmann.vcloset.R;
 import com.feldmann.vcloset.controller.Controller;
 import com.feldmann.vcloset.controller.ViewController;
@@ -17,6 +21,18 @@ public class MainActivity extends AppCompatActivity implements Controller.view {
         setContentView(R.layout.activity_main);
         this.msg = new ViewController(this, tagLog);
         msg.logD("onCreate");
+        this.btnIniciar( ((Button) findViewById(R.id.btnIniciar)) );
+    }
+
+    private void btnIniciar(Button btnIniciar){
+        btnIniciar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //
+                Intent in = new Intent(getActivity(), LookActivity.class);
+                getActivity().startActivity(in);
+            }
+        });
     }
 
     @Override
