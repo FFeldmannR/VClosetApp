@@ -17,4 +17,17 @@ public class MenuActivity extends AppCompatActivity {
         this.msg = new ViewController(this, tagLog);
         msg.logD("onCreate");
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        msg.logD("onResume");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        msg.logD("onDestroy");
+    }
+
 }

@@ -35,5 +35,17 @@ public class MainActivity extends AppCompatActivity implements Controller.view {
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        msg.logD("onResume");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        msg.logD("onDestroy");
+    }
+
+    @Override
     public Activity getActivity() { return this; }
 }

@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Button;
-
 import com.feldmann.vcloset.R;
 import com.feldmann.vcloset.controller.Controller;
 import com.feldmann.vcloset.controller.LookController;
@@ -29,6 +28,12 @@ public class LookActivity extends AppCompatActivity implements Controller.view{
         super.onResume();
         msg.logD("onResume");
         look.btnMenu( ((Button) findViewById(R.id.btnMenu)) );
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        msg.logD("onDestroy");
     }
 
     @Override
