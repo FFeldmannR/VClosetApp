@@ -20,7 +20,5 @@ public class MainActivity extends AppCompatActivity implements Controller.view {
     }
 
     @Override
-    public Activity getActivity() {
-        return this;
-    }
+    public Activity getActivity() { return this; }
 }
