@@ -5,8 +5,8 @@ import android.util.Log;
 import android.widget.Toast;
 
 public class ViewController implements Controller.msg {
-    private Context context;
-    private String tag;
+    private final Context context;
+    private final String tag;
 
     public ViewController(Context context, String tag) {
         this.context = context;
