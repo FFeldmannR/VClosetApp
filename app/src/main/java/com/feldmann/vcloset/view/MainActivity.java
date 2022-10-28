@@ -1,10 +1,9 @@
-package com.feldmann.vcloset;
+package com.feldmann.vcloset.view;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.os.Bundle;
-
+import com.feldmann.vcloset.R;
 import com.feldmann.vcloset.controller.Controller;
 import com.feldmann.vcloset.controller.ViewController;
 
